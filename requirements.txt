@@ -1,0 +1,7 @@
+pydantic
+huggingface_hub
+dotenv
+langchain
+beautifulsoup4 
+requests
+rich
