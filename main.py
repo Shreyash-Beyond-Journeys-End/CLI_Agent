@@ -175,7 +175,7 @@ async def handel_user_request(user_input):
         elif response.step == "OUTPUT":
             console.print("OUTPUT" , style=app_styles.step)
 
-            console.print(response.content , style=app_styles.output)
+            console.print(f"Agent: {response.content}" , style=app_styles.output)
 
             break
 
@@ -184,10 +184,10 @@ async def handel_user_request(user_input):
 
 async def RunApllication():
 
-    print("Hello how can I assist you today")
+    print("Agent: Hello how can I assist you today")
     while(True):
         print("\n")
-        user_input = input("Message: ")
+        user_input = input("Your_message: ")
 
 
         if(user_input=="exit"):
